@@ -1,0 +1,18 @@
+communion-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── EventList.js
+│   │   ├── EventForm.js
+│   │   └── FilterEvents.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   └── Events.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
