@@ -1,0 +1,107 @@
+/* Events Page Styles */
+.events {
+  padding: 2rem;
+}
+
+.events h1 {
+  text-align: center;
+  color: #6200ea;
+  margin-bottom: 2rem;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.event-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #6200ea;
+}
+
+.event-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.filter-events {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-events label {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.filter-events select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.event-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.event-form h2 {
+  text-align: center;
+  color: #6200ea;
+  margin-bottom: 1.5rem;
+}
+
+.event-form input,
+.event-form select,
+.event-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.event-form button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+  background-color: #3700b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+
+  .event-form {
+    padding: 1.5rem;
+  }
+}
